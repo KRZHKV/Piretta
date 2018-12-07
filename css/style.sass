@@ -1,0 +1,84 @@
+// Шрифты
+
+@font-face
+    font-family: "Lato"
+    src: url("../fonts/Lato-Regular.ttf") format("truetype")
+    font-weight: 500
+    font-style: normal
+    
+@font-face
+    font-family: "Lato"
+    src: url("../fonts/Lato-Bold.ttf") format("truetype")
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: "Lato"
+    src: url("../fonts/Lato-Light.ttf") format("truetype")
+    font-weight: 300
+    font-style: normal
+
+    
+    
+*
+    font-family: "Lato", sans-serif
+    a
+        text-decoration: none
+        color: #000
+    li
+        list-style: none
+
+// Элементы
+
+// Цвета
+    
+$red: #E2231A
+$black: #000000
+$white: #ffffff
+$dark-blue: #333E48
+
+// кнопка
+
+.button_red
+    text-transform: uppercase
+    padding: 10px 25px
+    background: $red
+    color: $white
+    border: none
+    border-radius: 8px
+
+// основная верстка
+
+.nav
+    &_logo
+        img
+            width: 100%
+    &_menu
+        ul
+            li
+                display: inline-block
+                margin: 15px
+                text-transform: uppercase
+                font-weight: 500
+                a
+                    padding-bottom: 5px
+                    position: relative
+    &_login
+        margin-top: 18px
+
+.decorate_link a::before
+    content: ''
+    bottom: 0
+    left: 0
+    position: absolute
+    height: 2px
+    width: 100%
+    background-color: $red
+    transition: 0.2s
+    transform: scaleX(0)
+
+.decorate_link a:hover:before
+    transform: scaleX(1)
+
+
+

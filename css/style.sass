@@ -28,6 +28,8 @@
     li
         list-style: none
 
+
+
 // Элементы
 
 // Цвета
@@ -47,9 +49,17 @@ $dark-blue: #333E48
     border: none
     border-radius: 8px
 
+.red_link
+    width: 80px
+    height: 2px
+    display: inline-block
+    background-color: $red
+
+
 // основная верстка
 
 .nav
+    z-index: 999
     height: 70px
     box-sizing: border-box
     position: fixed
@@ -57,6 +67,8 @@ $dark-blue: #333E48
     top: 0
     width: 100%
     background-color: $white
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45)
+
     &_logo
         img
             width: 100%
@@ -115,6 +127,9 @@ $dark-blue: #333E48
 //О компании
 
 .about
+    .heading
+        text-align: center
+        margin-bottom: 70px
     span
         img
             height: 60px
@@ -123,7 +138,8 @@ $dark-blue: #333E48
         margin-top: 50px
         text-align: center
         text-transform: uppercase
-        margin-bottom: 70px
+        font-size: 26px
+        margin-bottom: 0
     &_text
         font-size: 18px
         letter-spacing: 0.4px
@@ -136,6 +152,40 @@ $dark-blue: #333E48
             width: 100%
     .container
         padding-bottom: 70px
+
+// Продукция
+
+.production
+    padding-top: 50px
+    padding-bottom: 70px
+    background: url(../img/production-bg.png) center no-repeat
+    background-size: cover
+    text-align: center
+    .heading
+        color: $white
+        text-transform: uppercase
+        h2
+            font-size: 26
+            margin-bottom: 15px
+        p
+            font-weight: 300
+            margin-bottom: 70px
+        .red_link 
+            margin-bottom: 20px
+    &_box
+        background-color: $white
+        padding: 40px 25px 60px 25px
+        height: 470px
+        border-radius: 8px
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45)
+        h4
+            margin-top: 80px
+
+            
+        img
+            width: 250px
+            
+    
 
 
 

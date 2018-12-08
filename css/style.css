@@ -36,7 +36,15 @@
   border-radius: 8px;
 }
 
+.red_link {
+  width: 80px;
+  height: 2px;
+  display: inline-block;
+  background-color: #E2231A;
+}
+
 .nav {
+  z-index: 999;
   height: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,6 +53,8 @@
   top: 0;
   width: 100%;
   background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
 }
 .nav_logo img {
   width: 100%;
@@ -107,6 +117,10 @@
   font-weight: 300;
 }
 
+.about .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
 .about span img {
   height: 60px;
   width: 100%;
@@ -115,7 +129,8 @@
   margin-top: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  font-size: 26px;
+  margin-bottom: 0;
 }
 .about_text {
   font-size: 18px;
@@ -131,4 +146,41 @@
 }
 .about .container {
   padding-bottom: 70px;
+}
+
+.production {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background: url(../img/production-bg.png) center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.production .heading {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.production .heading h2 {
+  font-size: 26;
+  margin-bottom: 15px;
+}
+.production .heading p {
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+.production .heading .red_link {
+  margin-bottom: 20px;
+}
+.production_box {
+  background-color: #ffffff;
+  padding: 40px 25px 60px 25px;
+  height: 470px;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
+}
+.production_box h4 {
+  margin-top: 80px;
+}
+.production_box img {
+  width: 250px;
 }

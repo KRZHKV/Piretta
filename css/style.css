@@ -184,3 +184,22 @@
 .production_box img {
   width: 250px;
 }
+
+.video {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.video .head h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.video .head .red_link {
+  margin-bottom: 20px;
+}
+.video .head p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}

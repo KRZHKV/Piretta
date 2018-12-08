@@ -36,6 +36,16 @@
   border-radius: 8px;
 }
 
+.nav {
+  height: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
 .nav_logo img {
   width: 100%;
 }
@@ -70,4 +80,55 @@
 .decorate_link a:hover:before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.main {
+  margin-top: 70px;
+  text-align: center;
+  background: url(../img/main-bg.png) center no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.main_logo img {
+  width: 250px;
+}
+.main_heading {
+  margin-top: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.main_heading h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.main_heading h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.about span img {
+  height: 60px;
+  width: 100%;
+}
+.about h2 {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+.about_text {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.about_text p {
+  margin-bottom: 35px;
+}
+.about_image img {
+  width: 100%;
+}
+.about .container {
+  padding-bottom: 70px;
 }

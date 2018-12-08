@@ -50,6 +50,13 @@ $dark-blue: #333E48
 // основная верстка
 
 .nav
+    height: 70px
+    box-sizing: border-box
+    position: fixed
+    display: block
+    top: 0
+    width: 100%
+    background-color: $white
     &_logo
         img
             width: 100%
@@ -82,3 +89,55 @@ $dark-blue: #333E48
 
 
 
+//шапка
+
+.main
+    margin-top: 70px
+    text-align: center
+    background: url(../img/main-bg.png) center  no-repeat
+    background-size: cover
+    padding-top: 50px
+    padding-bottom: 80px
+    &_logo
+        img
+            width: 250px
+    &_heading
+        margin-top: 50px
+        color: $white
+        text-transform: uppercase
+        h1
+            font-size: 36px
+            font-weight: 500
+        h3
+            font-size: 24px
+            font-weight: 300
+
+//О компании
+
+.about
+    span
+        img
+            height: 60px
+            width: 100%
+    h2
+        margin-top: 50px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &_text
+        font-size: 18px
+        letter-spacing: 0.4px
+        line-height: 25px
+        font-weight: 500
+        p
+            margin-bottom: 35px
+    &_image
+        img
+            width: 100%
+    .container
+        padding-bottom: 70px
+
+
+
+
+    

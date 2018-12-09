@@ -203,3 +203,37 @@
   text-transform: uppercase;
   margin-bottom: 70px;
 }
+
+.features {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.features .col-md-6 {
+  padding: 0;
+}
+.features .head {
+  text-align: center;
+}
+.features .head h2 {
+  margin-bottom: 15px;
+}
+.features .head .red_link {
+  margin-bottom: 70px;
+}
+.features_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 20px;
+}
+.features_item p {
+  font-weight: 300;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.features .item_decoration-bottom {
+  border-bottom: 1px solid rgba(142, 143, 144, 0.5);
+}
+.features .item_decoration-right {
+  border-right: 1px solid rgba(142, 143, 144, 0.5);
+}

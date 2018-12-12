@@ -117,16 +117,18 @@
   font-weight: 300;
 }
 
+.about {
+  padding-top: 60px;
+}
 .about .heading {
   text-align: center;
   margin-bottom: 70px;
 }
-.about span img {
+.about_decoration img {
   height: 60px;
-  width: 100%;
+  z-index: 99;
 }
 .about h2 {
-  margin-top: 50px;
   text-align: center;
   text-transform: uppercase;
   font-size: 26px;
@@ -145,12 +147,12 @@
   width: 100%;
 }
 .about .container {
-  padding-bottom: 70px;
+  padding-bottom: 85px;
 }
 
 .production {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 85px;
   background: url(../img/production-bg.png) center no-repeat;
   background-size: cover;
   text-align: center;
@@ -186,8 +188,8 @@
 }
 
 .video {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 85px;
   text-align: center;
 }
 .video .head h2 {
@@ -205,8 +207,8 @@
 }
 
 .features {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 85px;
 }
 .features .col-md-6 {
   padding: 0;
@@ -240,8 +242,8 @@
 }
 
 .clients {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 85px;
   background: url(../img/production-bg.png) center no-repeat;
   background-size: cover;
   text-align: center;
@@ -274,4 +276,49 @@
 }
 .clients-box img {
   width: 170px;
+}
+
+.patents {
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
+.patents .head {
+  text-align: center;
+}
+.patents .head h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.patents .head .red_link {
+  margin-bottom: 20px;
+}
+.patents .head p {
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+.patents .slider-item {
+  margin: 0 10px;
+  text-align: center;
+}
+.patents .slider-item img {
+  width: 265px;
+}
+
+.callback {
+  padding: 10px;
+  background-color: #333E48;
+  color: #ffffff;
+}
+.callback-text {
+  text-transform: uppercase;
+}
+.callback-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.callback-text p {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 14px;
 }

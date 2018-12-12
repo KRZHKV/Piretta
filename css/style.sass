@@ -127,15 +127,17 @@ $dark-blue: #333E48
 //О компании
 
 .about
+    padding-top: 60px
     .heading
         text-align: center
         margin-bottom: 70px
-    span
+    &_decoration
         img
+
             height: 60px
-            width: 100%
+            z-index: 99
+            
     h2
-        margin-top: 50px
         text-align: center
         text-transform: uppercase
         font-size: 26px
@@ -151,13 +153,13 @@ $dark-blue: #333E48
         img
             width: 100%
     .container
-        padding-bottom: 70px
+        padding-bottom: 85px
 
 // Продукция
 
 .production
-    padding-top: 50px
-    padding-bottom: 70px
+    padding-top: 60px
+    padding-bottom: 85px
     background: url(../img/production-bg.png) center no-repeat
     background-size: cover
     text-align: center
@@ -188,8 +190,8 @@ $dark-blue: #333E48
 // Видео
 
 .video
-    padding-top: 50px
-    padding-bottom: 70px
+    padding-top: 60px
+    padding-bottom: 85px
     text-align: center
     .head 
         h2
@@ -208,8 +210,8 @@ $dark-blue: #333E48
 //преимущества
 
 .features
-    padding-top: 50px
-    padding-bottom: 70px
+    padding-top: 60px
+    padding-bottom: 85px
     .col-md-6
         padding: 0
     .head
@@ -237,8 +239,8 @@ $dark-blue: #333E48
 //Клиенты
 
 .clients
-    padding-top: 50px
-    padding-bottom: 70px
+    padding-top: 60px
+    padding-bottom: 85px
     background: url(../img/production-bg.png) center no-repeat
     background-size: cover
     text-align: center
@@ -268,7 +270,45 @@ $dark-blue: #333E48
 
 //Патенты
 
+.patents
+    padding-top: 60px
+    padding-bottom: 85px    
+    .head
+        text-align: center
+        h2
+            font-size: 26px
+            text-transform: uppercase
+            margin-bottom: 15px
+        .red_link
+            margin-bottom: 20px
+        p
+            font-weight: 300
+            margin-bottom: 70px
+    .news-slider
+    .slider-item
+        margin: 0 10px
+        text-align: center
+        img
+            width: 265px
 
+// Звонок
+
+.callback
+    padding: 10px
+    background-color: $dark-blue
+    color: $white
+    &-text
+        text-transform: uppercase
+        h3
+            font-size: 20px
+            margin-bottom: 10px
+        p
+            margin-top: 0
+            font-weight: 300   
+            font-size: 14px
+    
+
+    
 
 
 

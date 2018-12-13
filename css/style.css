@@ -25,6 +25,20 @@
 }
 * li {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+* ul {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
 }
 
 .button_red {
@@ -59,6 +73,9 @@
 .nav_logo img {
   width: 100%;
 }
+.nav_menu ul {
+  margin-top: 14px;
+}
 .nav_menu ul li {
   display: inline-block;
   margin: 15px;
@@ -70,7 +87,7 @@
   position: relative;
 }
 .nav_login {
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 .decorate_link a::before {
@@ -328,11 +345,11 @@
 .callback-form form {
   margin-top: 19px;
   padding: 0;
+  position: relative;
 }
 .callback-form form input {
   padding: 0.8rem 0.8rem;
   width: 100%;
-  position: relative;
   border: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -341,8 +358,8 @@
 }
 .callback-form form button {
   position: absolute;
-  top: 19px;
-  right: 4px;
+  top: 0;
+  right: -8px;
   padding: 5.5px 8px;
   border: none;
   background-color: #E2231A;
@@ -354,6 +371,7 @@
 
 .news {
   padding: 1px;
+  padding-bottom: 5px;
 }
 .news-text {
   text-transform: uppercase;
@@ -373,11 +391,11 @@
 .news-form form {
   margin-top: 19px;
   padding: 0;
+  position: relative;
 }
 .news-form form input {
   padding: 0.8rem 0.8rem;
   width: 100%;
-  position: relative;
   border: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -386,8 +404,8 @@
 }
 .news-form form button {
   position: absolute;
-  top: 19px;
-  right: 4px;
+  top: 0;
+  right: -8px;
   padding: 6.5px 8px;
   background-color: #E2231A;
   border-top-right-radius: 8px;
@@ -400,7 +418,83 @@
 footer {
   background: #333E48;
   color: #ffffff;
+  padding: 25px;
 }
 footer h4 {
   text-transform: uppercase;
+}
+footer .contacts p {
+  font-weight: 300;
+  line-height: 1.4;
+}
+footer .documents li {
+  margin-bottom: 4px;
+}
+footer .documents li a {
+  color: #ffffff;
+  font-weight: 300;
+}
+footer .search form {
+  margin-top: 19px;
+  padding: 0;
+  position: relative;
+}
+footer .search form input {
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+footer .search form button {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  padding: 3.5px 7px;
+  background-color: #E2231A;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+footer .language form {
+  margin-top: 19px;
+  padding: 0;
+  position: relative;
+}
+footer .language form input {
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+  position: relative;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+footer .language form button {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  padding: 11px 5px;
+  background-color: #E2231A;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+footer .socials {
+  margin-right: 50px;
+}
+footer .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .socials ul li {
+  margin: 5px;
 }

@@ -75,9 +75,9 @@ button {
 }
 
 .nav_menu_adaptive {
-  background-color: blue;
+  background-color: #333E48;
   position: fixed;
-  width: 60vw;
+  width: 40vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,9 +108,8 @@ button {
 }
 
 .nav_menu_adaptive ul a {
-  line-height: 4;
-  font-weight: 100;
-  letter-spacing: 4px;
+  line-height: 3;
+  font-weight: 500;
   color: #fff;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

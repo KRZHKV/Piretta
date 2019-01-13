@@ -56,7 +56,7 @@ $dark-blue: #333E48
     background: $red
     color: $white
     border: none
-    border-radius: 8px
+    border-radius: 7px
 
 .red_link
     width: 80px
@@ -69,14 +69,14 @@ $dark-blue: #333E48
 
 .nav_menu_adaptive-link
     display: none
-    button
-        margin-top: 18px
-        font-size: 26px
-        background-color: $red
+    a
+        margin-top: 17px
+        font-size: 28px
         color: $white
-        border: none
-        padding: 5.5px 8px
-        border-radius: 8px
+        transition: .5s
+
+.menu-link-active
+    color: $red
 
 // Адаптивное меню
 .nav_menu_adaptive
@@ -86,7 +86,7 @@ $dark-blue: #333E48
     height: 100vh
     display: flex
     justify-content: center
-    align-items: center
+    align-items: top
     left: -100vw
     transition: all .5s
 
@@ -95,31 +95,40 @@ $dark-blue: #333E48
     
 .nav_menu_adaptive
     ul 
+        margin-top: 200px
         list-style: none
         padding: 0
         text-align: center
-
-.nav_menu_adaptive
-        ul
-            li
-                width: 100vw
-
-.nav_menu_adaptive
-    ul
+        li
+            width: 40vw
         a
-            line-height: 3
+            line-height: 2.8
+            font-size: 20px
             font-weight: 500
             color: #fff
             transition: all 0.2s
             display: block
             text-decoration: none
-
-.nav_menu_adaptive
-    ul
         a:hover 
-            width: 100vw
+                width: 40vw
                 background-color: rgba(255, 255, 255, 0.4)
                 text-decoration: none
+        button
+            margin-top: 140px
+
+.nav_menu_box
+    span
+        margin-right: 20px
+        width: 180px
+        height: 70px
+        transform: skew(-47deg)
+        display: none
+        background: $red
+        position: fixed
+        top: 0
+        left: -80px
+        overflow: hidden
+        box-shadow: inset -4px 0px 4px rgba(0, 0, 0, 0.25)
 
 
 
@@ -551,9 +560,18 @@ footer
             display: none
         &_menu_adaptive-link
             display: inline-block
-            margin-left: 200px
+            position: fixed
+            top: 20px
+            left: 25px
+            z-index: 999
         &_items
         justify-content: space-between
         &_logo
         img
             width: 150px
+            position: fixed
+            right: 7%
+    
+    .nav_menu_box
+        span
+            display: block

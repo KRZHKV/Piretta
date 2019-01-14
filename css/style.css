@@ -168,8 +168,11 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.nav_logo {
+  margin-top: 5px;
+}
 .nav_logo img {
-  width: 168px;
+  width: 145px;
 }
 .nav_menu {
   text-align: center;
@@ -526,18 +529,34 @@ footer {
   background: #333E48;
   color: #ffffff;
   padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .cover {
+  width: 80%;
 }
 footer h4 {
   text-transform: uppercase;
 }
-footer .contacts p {
+footer .footer_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer .footer_contacts li {
   font-weight: 300;
   line-height: 1.4;
 }
-footer .documents li {
+footer .footer_documents li {
   margin-bottom: 4px;
 }
-footer .documents li a {
+footer .footer_documents li a {
   color: #ffffff;
   font-weight: 300;
 }
@@ -548,7 +567,7 @@ footer .search form {
 }
 footer .search form input {
   padding: 0.7rem 0.8rem;
-  width: 100%;
+  width: 70%;
   border: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -567,6 +586,9 @@ footer .search form button {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
   border: none;
 }
+footer .language {
+  width: 70px;
+}
 footer .language form {
   margin-top: 19px;
   padding: 0;
@@ -574,7 +596,7 @@ footer .language form {
 }
 footer .language form input {
   padding: 0.7rem 0.8rem;
-  width: 100%;
+  width: 40%;
   position: relative;
   border: none;
   border-top-left-radius: 8px;
@@ -594,15 +616,15 @@ footer .language form button {
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
   border: none;
 }
-footer .socials {
+footer .socials_links {
   margin-right: 50px;
 }
-footer .socials ul {
+footer .socials_links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer .socials ul li {
+footer .socials_links ul li {
   margin: 5px;
 }
 
@@ -623,9 +645,6 @@ footer .socials ul li {
   .nav_menu ul li a {
     padding-bottom: 5px;
     position: relative;
-  }
-  .nav_logo img {
-    width: 165px;
   }
 }
 @media screen and (max-width: 959px) {
@@ -654,8 +673,8 @@ footer .socials ul li {
     left: 25px;
     z-index: 999;
   }
-  .nav img {
-    width: 150px;
+  .nav_logo img {
+    width: 145px;
     position: fixed;
     right: 7%;
   }

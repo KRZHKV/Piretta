@@ -151,8 +151,9 @@ $dark-blue: #333E48
         justify-content: space-around
 
     &_logo
+        margin-top: 5px
         img
-            width: 168px
+            width: 145px
     &_menu
         text-align: center
         ul
@@ -461,13 +462,21 @@ footer
     background: $dark-blue
     color: $white
     padding: 25px
+    display: flex
+    justify-content: center
+    
+    .cover
+        width: 80%
     h4
         text-transform: uppercase
-    .contacts
-        p
+    .footer_items
+        display: flex
+        justify-content: space-around
+    .footer_contacts
+        li
             font-weight: 300
             line-height: 1.4
-    .documents
+    .footer_documents
         li
             margin-bottom: 4px
             a
@@ -480,7 +489,7 @@ footer
             position: relative
             input
                 padding: 0.7rem 0.8rem
-                width: 100%
+                width: 70%
                 border: none
                 border-top-left-radius: 8px
                 border-bottom-left-radius: 8px
@@ -498,13 +507,14 @@ footer
                 border: none 
 
     .language
+        width: 70px
         form
             margin-top: 19px
             padding: 0
             position: relative
             input
                 padding: 0.7rem 0.8rem
-                width: 100%
+                width: 40%
                 position: relative
                 border: none
                 border-top-left-radius: 8px
@@ -521,7 +531,7 @@ footer
                 box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6)
                 border: none
 
-    .socials
+    .socials_links
         margin-right: 50px
         ul
             display: flex
@@ -544,9 +554,7 @@ footer
                     a
                         padding-bottom: 5px
                         position: relative
-        &_logo
-            img
-                width: 165px
+
 
 @media screen and (max-width: 959px)
     .nav
@@ -567,10 +575,10 @@ footer
         &_items
         justify-content: space-between
         &_logo
-        img
-            width: 150px
-            position: fixed
-            right: 7%
+            img
+                width: 145px
+                position: fixed
+                right: 7%
     
     .nav_menu_box
         span

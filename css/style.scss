@@ -50,7 +50,7 @@ $dark-blue: #333E48;
     }
 }
 .cover {
-    width: 80%;
+    width: 60%;
 }
 .red_link {
     width: 80px;
@@ -163,7 +163,7 @@ $dark-blue: #333E48;
     &_items {
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     &_logo {
         margin-top: 5px;
@@ -191,9 +191,6 @@ $dark-blue: #333E48;
     &_login {
         text-align: right;
         margin-top: 17px;
-    }
-    .cover {
-        text-align: center;
     }
 }
 
@@ -254,7 +251,7 @@ $dark-blue: #333E48;
     }
     &_items {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     &_contacts {
         li {
@@ -344,7 +341,11 @@ $dark-blue: #333E48;
         }
     }
 }
-
+@media screen and (max-width: 1610px) {
+    .cover {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1199px) {
     .cover {
         width: 90%;
@@ -376,7 +377,6 @@ $dark-blue: #333E48;
         }
     }
 }
-
 
 @media screen and (max-width: 975px) {
     .nav {

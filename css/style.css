@@ -40,7 +40,7 @@
 }
 
 .cover {
-  width: 80%;
+  width: 60%;
 }
 
 .red_link {
@@ -173,9 +173,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav_logo {
   margin-top: 5px;
@@ -203,9 +203,6 @@
 .nav_login {
   text-align: right;
   margin-top: 17px;
-}
-.nav .cover {
-  text-align: center;
 }
 
 .decorate_link a::before {
@@ -275,8 +272,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer_contacts li {
   font-weight: 300;
@@ -361,6 +359,11 @@
   font-size: 32px;
 }
 
+@media screen and (max-width: 1610px) {
+  .cover {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1199px) {
   .cover {
     width: 90%;

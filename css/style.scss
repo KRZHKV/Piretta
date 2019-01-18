@@ -272,12 +272,11 @@ $dark-blue: #333E48;
             }
         }
     &_search {
-        width: 30%;
         form {
             margin-top: 20px;
             padding: 0;
             position: relative;
-            width: 95%;
+            width: 280px;
             input {
                 padding: 0.7rem 0.8rem;
                 border: none;
@@ -326,6 +325,9 @@ $dark-blue: #333E48;
                 border: none;
             }
         }
+        &_adaptive {
+            display: none;
+        }
     }
 
     .socials_links {
@@ -363,6 +365,14 @@ $dark-blue: #333E48;
                         position: relative;
                     }
             }
+        }
+    }
+    .footer_search {
+        form {
+            margin-top: 20px;
+            padding: 0;
+            position: relative;
+            width: 250px;
         }
     }
 }
@@ -425,8 +435,12 @@ $dark-blue: #333E48;
         }
         &_language {
             form {
+                display: none;
+            }
+            &_adaptive {
+                display: flex;
                 button {
-                    padding: 11.5px 5px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -441,7 +455,7 @@ $dark-blue: #333E48;
                     width: 70%;
                 }
                 button {
-                    right: 15px;
+                    margin-right: 15px;
                 }
 
             }

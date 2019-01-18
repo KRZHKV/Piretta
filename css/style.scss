@@ -65,6 +65,11 @@ $dark-blue: #333E48;
     color: $white;
     border: none;
     border-radius: 7px;
+    transition: all .2s
+}
+.button_red:hover {
+    background-color: $dark-blue;
+    color: $red;
 }
 
 // Adaptive Menu
@@ -144,6 +149,7 @@ $dark-blue: #333E48;
 
 // Navigation
 .nav {
+    text-align: center;
     z-index: 10;
     height: 70px;
     box-sizing: border-box;
@@ -155,8 +161,9 @@ $dark-blue: #333E48;
     display: flex;
     justify-content: center;
     &_items {
+        text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     &_logo {
         margin-top: 5px;
@@ -165,6 +172,7 @@ $dark-blue: #333E48;
         }
     }
     &_menu {
+        margin: 0px 30px;
         text-align: center;
         ul {
             margin-top: 14px;
@@ -183,6 +191,9 @@ $dark-blue: #333E48;
     &_login {
         text-align: right;
         margin-top: 17px;
+    }
+    .cover {
+        text-align: center;
     }
 }
 
@@ -338,6 +349,7 @@ $dark-blue: #333E48;
     }
     .nav {
         &_menu {
+            margin: 0 20px;
             ul {
                 margin-top: 20px;
                 li {
@@ -356,7 +368,7 @@ $dark-blue: #333E48;
 }
 
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 975px) {
     .nav {
         .cover {
             width: 100%

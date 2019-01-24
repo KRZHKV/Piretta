@@ -119,8 +119,6 @@
   left: -100vw;
   -webkit-transition: all .5s;
   transition: all .5s;
-  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
-          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.35);
   z-index: 99;
 }
 .nav_menu_adaptive ul {

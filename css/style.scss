@@ -424,7 +424,7 @@ $dark-blue: #333E48;
             margin-bottom: 30px;
             h4 {
                 font-weight: 300;
-                margin: 0px 12px 0px 10px;
+                margin: 0px 10px 0px 10px;
             }
         }
     }
@@ -531,8 +531,8 @@ $dark-blue: #333E48;
     }
 }
  
-// News
-.news {
+// mailing
+.mailing {
     text-align: center;
     padding: 1px;
     padding-bottom: 5px;
@@ -560,7 +560,7 @@ $dark-blue: #333E48;
     &_form {
         margin-top: 10px;
         form {
-            margin-top: 12px;
+            margin-top: 10px;
             padding: 0;
             position: relative;
             input {

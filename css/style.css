@@ -459,13 +459,12 @@
 }
 .clients .client_text h4 {
   font-weight: 300;
-  margin: 0px 12px 0px 10px;
+  margin: 0px 10px 0px 10px;
 }
 
 .patents {
   text-align: center;
   padding-bottom: 70px;
-  position: relative;
 }
 .patents .cover {
   display: inline-block;
@@ -566,43 +565,43 @@
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
 }
 
-.news {
+.mailing {
   text-align: center;
   padding: 1px;
   padding-bottom: 5px;
 }
-.news .cover {
+.mailing .cover {
   display: inline-block;
 }
-.news_items {
+.mailing_items {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: grid;
   grid-template-columns: 70% 30%;
 }
-.news_text {
+.mailing_text {
   text-transform: uppercase;
   text-align: left;
 }
-.news_text h3 {
+.mailing_text h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.news_text p {
+.mailing_text p {
   margin-top: 0;
   font-weight: 300;
   font-size: 12px;
 }
-.news_form {
+.mailing_form {
   margin-top: 10px;
 }
-.news_form form {
-  margin-top: 12px;
+.mailing_form form {
+  margin-top: 10px;
   padding: 0;
   position: relative;
 }
-.news_form form input {
+.mailing_form form input {
   padding: 0.8rem 0.8rem;
   width: 100%;
   border: none;
@@ -611,7 +610,7 @@
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
 }
-.news_form form button {
+.mailing_form form button {
   position: absolute;
   top: 0;
   right: -32px;

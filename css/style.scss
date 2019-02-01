@@ -116,6 +116,7 @@ $dark-blue: #333E48;
     align-items: top;
     left: -100vw;
     transition: all .5s;
+
     z-index: 99;
     ul {
         margin-top: 80px;
@@ -394,7 +395,6 @@ $dark-blue: #333E48;
         display: block;
         width: 100%;
         float: left;
-
     }
     .client {
         display: block;
@@ -434,10 +434,8 @@ $dark-blue: #333E48;
 .patents {
     text-align: center;
     padding-bottom: 70px;
-    position: relative;
     .cover {
-        display: inline-block;
-        
+        display: inline-block;   
     }
     .news-slider {
         text-align: center;

@@ -41,7 +41,7 @@
 }
 
 .cover {
-  width: 60%;
+  width: 1440px;
 }
 
 .red_link {
@@ -621,6 +621,96 @@
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
   border: none;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news-wrapper {
+  margin-top: 100px;
+  width: 80%;
+  display: inline-block;
+}
+.news-post {
+  display: block;
+  margin-bottom: 35px;
+  padding: 30px 25px 30px 25px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.news-post .timepost {
+  color: #333E48;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.news-post .timepost p {
+  padding: 0;
+  margin: 0;
+}
+.news-post-head {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+.news-post-head h2 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.news-post-disc {
+  margin-bottom: 40px;
+}
+.news-post-disc p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+.news-post-btn button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: #E2231A;
+  color: #fff;
+  padding-right: 35px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.news-post-btn button .btn-arrow {
+  position: absolute;
+  top: 3.5px;
+  right: 12px;
+  font-size: 24px;
+}
+.news-post-btn button:hover {
+  opacity: 0.9;
+  transform: scale(1.03, 1.03);
+  -webkit-transform: scale(1.03, 1.03);
+  -moz-transform: scale(1.03, 1.03);
+  -ms-transform: scale(1.03, 1.03);
+  -o-transform: scale(1.03, 1.03);
+  background-color: #fff;
+  color: #000;
+}
+.news-post-btn button:hover .btn-arrow {
+  color: #E2231A;
 }
 
 .footer {

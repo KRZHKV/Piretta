@@ -50,7 +50,7 @@ $dark-blue: #333E48;
     }
 }
 .cover {
-    width: 60%;
+    width: 1440px;
 }
 .red_link {
     width: 80px;
@@ -585,6 +585,95 @@ $dark-blue: #333E48;
         }
     }
 }
+
+
+// News
+.news {
+    display: flex;
+    justify-content: center;
+    .cover {
+        display: flex;
+        justify-content: center;
+    }
+    &-wrapper {
+        margin-top: 100px;
+        width: 80%;
+        display: inline-block;
+    }
+    &-post {
+        display: block;
+        margin-bottom: 35px;
+        padding:30px 25px 30px 25px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        .timepost {
+            color: $dark-blue;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 25px;
+            p {
+                padding: 0;
+                margin:0;
+            }
+        }
+        &-head {
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            h2 {
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        &-disc {
+            margin-bottom: 40px;
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        &-btn {
+            button {
+                border: none;
+                cursor: pointer;
+                position: relative;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                background-color: $red;
+                color: #fff;
+                padding-right: 35px;
+                transition: all .3s ease-in;
+
+
+                .btn-arrow {
+                    position: absolute;
+                    top: 3.5px;
+                    right: 12px;
+                    font-size: 24px;
+                }
+                
+            }
+            button:hover {
+                opacity: 0.9;
+                transform: scale(1.03, 1.03);
+                -webkit-transform: scale(1.03, 1.03);
+                -moz-transform: scale(1.03, 1.03);
+                -ms-transform: scale(1.03, 1.03);
+                -o-transform: scale(1.03, 1.03);
+                background-color: #fff;
+                color: #000;
+                .btn-arrow {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+
 
 // Footer
 .footer {

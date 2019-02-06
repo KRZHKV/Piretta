@@ -50,7 +50,7 @@ $dark-blue: #333E48;
     }
 }
 .cover {
-    width: 1440px;
+    width: 1240px;
 }
 .red_link {
     width: 80px;
@@ -60,16 +60,16 @@ $dark-blue: #333E48;
 }
 .button_red {
     text-transform: uppercase;
-    padding: 10px 25px;
+    padding: 10px 20px;
     background: $red;
     color: $white;
     border: none;
-    border-radius: 7px;
+    border-radius: 6px;
     transition: all .2s
 }
 .button_blue:hover {
-    background-color: $dark-blue;
-    color: $red;
+    opacity: 0.9;
+    transform: scale(1.03, 1.03);
 }
 
 // Navigation Decoration
@@ -90,18 +90,18 @@ $dark-blue: #333E48;
 .head {
     text-align: center;
     text-transform: uppercase;
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    margin-bottom: 50px;
         h2 {
-            font-size: 26;
+            font-size: 24px;
             margin-bottom: 15px;
         }
         p {
             font-weight: 300;
-            margin-bottom: 70px;
+            font-size: 16px;
         }
         .red_link {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 }
 
@@ -153,7 +153,7 @@ $dark-blue: #333E48;
     span {
         margin-right: 20px;
         width: 180px;
-        height: 70px;
+        height: 65px;
         transform: skew(-47deg);
         display: none;
         background: $red;
@@ -184,7 +184,7 @@ $dark-blue: #333E48;
 .nav {
     text-align: center;
     z-index: 10;
-    height: 70px;
+    height: 60px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -199,31 +199,34 @@ $dark-blue: #333E48;
         justify-content: space-between;
     }
     &_logo {
+        margin-left: 20px;
         margin-top: 5px;
         img {
-            width: 145px;
+            width: 120px;
         }
     }
     &_menu {
-        margin: 0px 30px;
+        margin-top: 18px;
         text-align: center;
         ul {
-            margin-top: 14px;
             li {
                 display: inline-block;
-                margin: 15px;
+                margin: 8px;
                 text-transform: uppercase;
                 font-weight: 500;
-            }
+                font-size: 14px;
                 a {
                     padding-bottom: 5px;
                     position: relative;
                 }
+            }
         }
     }
     &_login {
+        margin-right: 20px;
         text-align: right;
-        margin-top: 17px;
+        font-size: 14px;
+        margin-top: 12px;
     }
 }
 
@@ -262,17 +265,17 @@ $dark-blue: #333E48;
     justify-content: center;
     &_items {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding-bottom: 70px;
     }
     &_text {
-        text-align: justify;
-        width: 60%;
-        font-size: 18px;
+        text-align: left;
+        width: 50%;
+        font-size: 16px;
         letter-spacing: 0.4px;
         line-height: 25px;
         font-weight: 500;
-        margin: 0 50px 0 0;
+        margin: 0 70px 0 0;
         p {
             margin-bottom: 35px;
         }
@@ -283,7 +286,6 @@ $dark-blue: #333E48;
             width: 90%;
         }
     }
-
 }
 
 //Production
@@ -540,7 +542,6 @@ $dark-blue: #333E48;
         display: inline-block;
     }
     &_items {
-        justify-content: center;
         display: grid;
         grid-template-columns: 70% 30%;
     }
@@ -616,7 +617,7 @@ $dark-blue: #333E48;
             }
         }
         &-head {
-            font-size: 22px;
+            font-size: 24px;
             letter-spacing: 0.5px;
             margin-bottom: 15px;
             h2 {
@@ -632,6 +633,7 @@ $dark-blue: #333E48;
                 padding: 0;
                 font-size: 16px;
                 font-weight: 300;
+                line-height: 1.4;
             }
         }
         &-btn {
@@ -645,7 +647,7 @@ $dark-blue: #333E48;
                 background-color: $red;
                 color: #fff;
                 padding-right: 35px;
-                transition: all .3s ease-in;
+                transition: all .2s ease-in;
 
 
                 .btn-arrow {
@@ -786,20 +788,11 @@ $dark-blue: #333E48;
         }
     }
 }
-// Adaptive site
-@media screen and (max-width: 2120px) {
+
+// Adaptive
+@media screen and (max-width: 1000px) {
     .cover {
-        width: 72%;
-    }
-}
-@media screen and (max-width: 1610px) {
-    .cover {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1199px) {
-    .cover {
-        width: 90%;
+        width: 1000px;
     }
     .nav {
         &_menu {
@@ -828,7 +821,7 @@ $dark-blue: #333E48;
         }
     }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 768px) {
     .nav_menu_adaptive {
         display: flex;
     }
@@ -935,7 +928,7 @@ $dark-blue: #333E48;
             display: block;
         }
     }
-    .news {
+    .mailing {
         padding-bottom: 15px;
         &_items {
             width: 80%;
@@ -977,7 +970,7 @@ $dark-blue: #333E48;
     }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 480px) {
     .footer {
         &_search {
             form {

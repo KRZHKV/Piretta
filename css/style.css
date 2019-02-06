@@ -41,7 +41,7 @@
 }
 
 .cover {
-  width: 1440px;
+  width: 1240px;
 }
 
 .red_link {
@@ -53,18 +53,19 @@
 
 .button_red {
   text-transform: uppercase;
-  padding: 10px 25px;
+  padding: 10px 20px;
   background: #E2231A;
   color: #ffffff;
   border: none;
-  border-radius: 7px;
+  border-radius: 6px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .button_blue:hover {
-  background-color: #333E48;
-  color: #E2231A;
+  opacity: 0.9;
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
 }
 
 .decorate_link a::before {
@@ -89,19 +90,19 @@
 .head {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  margin-bottom: 50px;
 }
 .head h2 {
-  font-size: 26;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 .head p {
   font-weight: 300;
-  margin-bottom: 70px;
+  font-size: 16px;
 }
 .head .red_link {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .nav_menu_adaptive {
@@ -157,7 +158,7 @@
 .nav_menu_box span {
   margin-right: 20px;
   width: 180px;
-  height: 70px;
+  height: 65px;
   -webkit-transform: skew(-47deg);
           transform: skew(-47deg);
   display: none;
@@ -189,7 +190,7 @@
 .nav {
   text-align: center;
   z-index: 10;
-  height: 70px;
+  height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
@@ -215,31 +216,32 @@
           justify-content: space-between;
 }
 .nav_logo {
+  margin-left: 20px;
   margin-top: 5px;
 }
 .nav_logo img {
-  width: 145px;
+  width: 120px;
 }
 .nav_menu {
-  margin: 0px 30px;
+  margin-top: 18px;
   text-align: center;
-}
-.nav_menu ul {
-  margin-top: 14px;
 }
 .nav_menu ul li {
   display: inline-block;
-  margin: 15px;
+  margin: 8px;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 14px;
 }
-.nav_menu ul a {
+.nav_menu ul li a {
   padding-bottom: 5px;
   position: relative;
 }
 .nav_login {
+  margin-right: 20px;
   text-align: right;
-  margin-top: 17px;
+  font-size: 14px;
+  margin-top: 12px;
 }
 
 .main {
@@ -284,18 +286,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 70px;
 }
 .about_text {
-  text-align: justify;
-  width: 60%;
-  font-size: 18px;
+  text-align: left;
+  width: 50%;
+  font-size: 16px;
   letter-spacing: 0.4px;
   line-height: 25px;
   font-weight: 500;
-  margin: 0 50px 0 0;
+  margin: 0 70px 0 0;
 }
 .about_text p {
   margin-bottom: 35px;
@@ -574,9 +577,6 @@
   display: inline-block;
 }
 .mailing_items {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: grid;
   grid-template-columns: 70% 30%;
 }
@@ -662,7 +662,7 @@
   margin: 0;
 }
 .news-post-head {
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
 }
@@ -679,6 +679,7 @@
   padding: 0;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.4;
 }
 .news-post-btn button {
   border: none;
@@ -690,8 +691,8 @@
   background-color: #E2231A;
   color: #fff;
   padding-right: 35px;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 .news-post-btn button .btn-arrow {
   position: absolute;
@@ -828,19 +829,9 @@
   font-size: 32px;
 }
 
-@media screen and (max-width: 2120px) {
+@media screen and (max-width: 1000px) {
   .cover {
-    width: 72%;
-  }
-}
-@media screen and (max-width: 1610px) {
-  .cover {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .cover {
-    width: 90%;
+    width: 1000px;
   }
 
   .nav_menu {
@@ -867,7 +858,7 @@
     width: 250px;
   }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 768px) {
   .nav_menu_adaptive {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -978,10 +969,10 @@
     display: block;
   }
 
-  .news {
+  .mailing {
     padding-bottom: 15px;
   }
-  .news_items {
+  .mailing_items {
     width: 80%;
     display: block;
   }
@@ -1022,7 +1013,7 @@
     transition: 0.3s;
   }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 480px) {
   .footer_search form input {
     width: 80%;
   }

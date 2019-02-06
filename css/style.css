@@ -875,6 +875,7 @@
   font-size: 32px;
 }
 
+
 @media screen and (max-width: 1000px) {
   .cover {
     width: 1000px;

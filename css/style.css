@@ -279,10 +279,6 @@
   text-align: left;
   font-size: 13px;
 }
-.nav .servises:hover span {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
 .nav .servises:hover .servises-submenu {
   visibility: visible;
   opacity: 1;
@@ -514,6 +510,7 @@
 .patents {
   text-align: center;
   padding-bottom: 70px;
+  position: relative;
 }
 .patents .cover {
   display: inline-block;
@@ -521,6 +518,7 @@
 .patents .news-slider {
   text-align: center;
   margin: 0 -10px;
+  position: relative;
 }
 .patents .news-slider .slider-item {
   margin: 0 10px;
@@ -532,6 +530,7 @@
   display: inline-block;
 }
 .patents .slider_button_prew {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   width: 3rem;
@@ -545,6 +544,7 @@
           transform: scaleY(-50%);
 }
 .patents .slider_button_next {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   width: 3rem;

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/pirreta-link.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="/js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="">
     <title>Piretta</title>
 </head>
 
@@ -61,9 +61,20 @@
                             </ul>
                         </li>
                         <li class="decorate_link"><a href="#">Оборудование</a></li>
-                        <li class="decorate_link"><a href="#">О нас</a></li>
+                        <li class="about-link decorate_link"><a href="#">О нас <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="about-link-submenu">
+                                <li><a href="#">документация</a></li>
+                                <li><a href="#">клиенты и партнеры</a></li>
+                                <li><a href="#">производственные площадки</a></li>
+                            </ul>
+                        </li>
                         <li class="decorate_link"><a href="#">Контакты</a></li>
-                        <li class="decorate_link"><a href="#">Учебный центр</a></li>
+                        <li class="education decorate_link"><a href="#">Учебный центр <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="education-submenu">
+                                <li><a href="#">Конференции</a></li>
+                                <li><a href="#">Обучение персонала</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- <div class="nav_login">
@@ -279,7 +290,8 @@
                 </div>
                 <div class="callback_form">
                     <form action="">
-                        <input type="number" name="number" id="" placeholder="Ваш телефон">
+                        <input class="name"type="text" placeholder="Ваше имя">
+                        <input class="number" type="number" name="number" id="" placeholder="Ваш телефон">
                         <button class="form-buttom" type="submit"><img src="img/phone.svg" alt=""></button>
                     </form>
                 </div>
@@ -338,11 +350,16 @@
                         <li><a href="#">Патенты</a></li>
                     </ul>
                 </div>
-                <div class="footer_map">
-                    <div class="map">
-                        <h4>Карта сайта</h4>
-                        <p></p>
-                    </div>
+                <div class="footer_sections">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Оборудование</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Конференции</a></li>
+                        <li><a href="#">Вывоз отходов</a></li>
+                    </ul>
                 </div>
                 <div class="footer_search">
                     <h4>Поиск по сайту</h4>

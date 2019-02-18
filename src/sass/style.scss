@@ -214,7 +214,7 @@ $dark-blue: #333E48;
     }
     &_menu {
         display: inline-block;
-        margin-top: 18px;
+        margin-top: 10px;
         text-align: center;
         ul {
             li {
@@ -462,6 +462,7 @@ $dark-blue: #333E48;
     display: flex;
     justify-content: center;
     &_items {
+        margin-right: 30px;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -552,10 +553,8 @@ $dark-blue: #333E48;
     text-align: center;
     padding-bottom: 70px;
     position: relative;
-    .cover {
-        display: inline-block;   
-    }
     .news-slider {
+        display: block;
         text-align: center;
         margin: 0 -10px;
         position: relative;
@@ -565,9 +564,11 @@ $dark-blue: #333E48;
             img {
                 text-align: center;
                 width: 265px;
-                display: inline-block;
             }
         }
+    }
+    .slider-item {
+        display: inline-block;
     }
     .slider_button_prew {
         cursor: pointer;

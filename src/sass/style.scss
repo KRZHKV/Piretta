@@ -1,6 +1,4 @@
-.testing {
-    width: percentage(5/7);
-}
+
 //Fonts
 @font-face {
     font-family: "Lato";
@@ -31,6 +29,7 @@ $dark-blue: #333E48;
 
 //General
 * {
+    box-sizing: border-box;
     font-family: "Lato", sans-serif;
     a {
         text-decoration: none;
@@ -54,8 +53,7 @@ $dark-blue: #333E48;
 }
 
 .cover {
-    width: 1170px;
-    margin: 0 60px 0 60px;
+    width: 1140px;
 }
 .red_link {
     width: 80px;
@@ -625,6 +623,7 @@ $dark-blue: #333E48;
         }
     }
     &_form {
+        width: 100%;
         margin-top: 10px;
         form {
             display: flex;
@@ -643,7 +642,6 @@ $dark-blue: #333E48;
                 width: 240px;
             }
             input {
-                height: 18px;
                 display: inline-block;
                 padding: 0.8rem 0.8rem;
                 border: none;
@@ -671,10 +669,12 @@ $dark-blue: #333E48;
     padding-bottom: 5px;
     .cover {
         display: inline-block;
+        text-align: center;
     }
     &_items {
+        text-align: center;
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 70% 30%;
     }
     &_text {
         text-transform: uppercase;
@@ -690,8 +690,10 @@ $dark-blue: #333E48;
         }
     }
     &_form {
+        width: 100%;
         margin-top: 10px;
         form {
+            width: 100%;
             margin-top: 10px;
             padding: 0;
             position: relative;
@@ -699,7 +701,7 @@ $dark-blue: #333E48;
                 position: absolute;
                 right: 10px;
                 padding: 0.8rem 0.8rem;
-                width: 230px;
+                width: 100%;
                 border: none;
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;

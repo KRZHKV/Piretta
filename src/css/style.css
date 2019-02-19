@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.testing {
-  width: 71.4285714286%;
-}
-
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Regular.ttf") format("truetype");
@@ -22,6 +18,8 @@
   font-style: normal;
 }
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
 * a {
@@ -45,8 +43,7 @@
 }
 
 .cover {
-  width: 1170px;
-  margin: 0 60px 0 60px;
+  width: 1140px;
 }
 
 .red_link {
@@ -689,6 +686,7 @@
   font-size: 14px;
 }
 .callback_form {
+  width: 100%;
   margin-top: 10px;
 }
 .callback_form form {
@@ -710,7 +708,6 @@
   width: 240px;
 }
 .callback_form form input {
-  height: 18px;
   display: inline-block;
   padding: 0.8rem 0.8rem;
   border: none;
@@ -737,10 +734,12 @@
 }
 .mailing .cover {
   display: inline-block;
+  text-align: center;
 }
 .mailing_items {
+  text-align: center;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
 }
 .mailing_text {
   text-transform: uppercase;
@@ -756,9 +755,11 @@
   font-size: 12px;
 }
 .mailing_form {
+  width: 100%;
   margin-top: 10px;
 }
 .mailing_form form {
+  width: 100%;
   margin-top: 10px;
   padding: 0;
   position: relative;
@@ -767,7 +768,7 @@
   position: absolute;
   right: 10px;
   padding: 0.8rem 0.8rem;
-  width: 230px;
+  width: 100%;
   border: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;

@@ -608,57 +608,6 @@
   font-weight: 300;
 }
 
-.patents {
-  text-align: center;
-  padding-bottom: 70px;
-  position: relative;
-}
-.patents .news-slider {
-  display: block;
-  text-align: center;
-  margin: 0 -10px;
-  position: relative;
-}
-.patents .news-slider .slider-item {
-  margin: 0 10px;
-  text-align: center;
-}
-.patents .news-slider .slider-item img {
-  text-align: center;
-  width: 265px;
-}
-.patents .slider-item {
-  display: inline-block;
-}
-.patents .slider_button_prew {
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  background: url(../img/prev-arrow.svg) center no-repeat;
-  background-size: 100%;
-  top: 50%;
-  left: 0;
-  -webkit-transform: scaleY(-50%);
-          transform: scaleY(-50%);
-}
-.patents .slider_button_next {
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  background: url(../img/next-arrow.svg) center no-repeat;
-  background-size: 100%;
-  top: 50%;
-  right: 0;
-  -webkit-transform: scaleY(-50%);
-          transform: scaleY(-50%);
-}
-
 .callback {
   text-align: center;
   background-color: #333E48;
